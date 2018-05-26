@@ -1,0 +1,12 @@
+//---> Create   :   1397.03.05
+//---> Finish   :   --
+//---> Update   :   --
+/*****************************/
+
+@mixin transition($onWhat, $time, $easing) {
+	-webkit-transition: #{$onWhat} #{$time}ms #{$easing};
+	-moz-transition: #{$onWhat} #{$time}ms #{$easing};
+	-o-transition: #{$onWhat} #{$time}ms #{$easing};
+	-ms-transition: #{$onWhat} #{$time}ms #{$easing};
+	transition: #{$onWhat} #{$time}ms #{$easing};
+}

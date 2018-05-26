@@ -1,0 +1,31 @@
+//---> Create   :   1397.03.05
+//---> Finish   :   --
+//---> Update   :   --
+/*****************************/
+
+.bgh {
+	@include transition('background-color', $effect_duration, '');
+}
+
+/* bg colors : */
+@each $color_name, $color_array in $colors {
+	@each $color_level, $color_value in $color_array {
+		@if $color_name == "shades" {
+			.bg_#{$color_level} , .bgh.bgh_#{$color_level}:hover {
+				background-color: #{$color_value} !important;
+			}
+		}
+		@else {
+			@if($color_level == "500") {
+				.bg_#{$color_name}, .bg_#{$color_name}_#{$color_level} , .bgh.bgh_#{$color_name}_#{$color_level}:hover {
+					background-color: #{$color_value} !important;
+				}
+			}
+			@else {
+				.bg_#{$color_name}_#{$color_level} , .bgh.bgh_#{$color_name}_#{$color_level}:hover {
+					background-color: #{$color_value} !important;
+				}
+			}
+		}
+	}
+}

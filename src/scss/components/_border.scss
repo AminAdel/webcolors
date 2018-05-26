@@ -1,0 +1,67 @@
+//---> Create   :   1397.03.05
+//---> Finish   :   1397.03.05
+//---> Update   :   --
+/*****************************/
+
+.bdh {
+	@include transition('border-color', $effect_duration, '');
+}
+
+/* border colors : */
+@each $color_name, $color_array in $colors {
+	@each $color_level, $color_value in $color_array {
+		@if $color_name == "shades" {
+			.bd_#{$color_level} , .bdh.bdh_#{$color_level}:hover {
+				border-color: #{$color_value} !important;
+			}
+			.bdt_#{$color_level} {
+				border-top-color: #{$color_value} !important;
+			}
+			.bdr_#{$color_level} {
+				border-right-color: #{$color_value} !important;
+			}
+			.bdb_#{$color_level} {
+				border-bottom-color: #{$color_value} !important;
+			}
+			.bdl_#{$color_level} {
+				border-left-color: #{$color_value} !important;
+			}
+		}
+		@else {
+			@if($color_level == "500") {
+				.bd_#{$color_name}, .bd_#{$color_name}_#{$color_level} , .bdh.bdh_#{$color_name}_#{$color_level}:hover {
+					border-color: #{$color_value} !important;
+				}
+				.bdt_#{$color_name}, .bdt_#{$color_name}_#{$color_level} {
+					border-top-color: #{$color_value} !important;
+				}
+				.bdr_#{$color_name}, .bdr_#{$color_name}_#{$color_level} {
+					border-right-color: #{$color_value} !important;
+				}
+				.bdb_#{$color_name}, .bdb_#{$color_name}_#{$color_level} {
+					border-bottom-color: #{$color_value} !important;
+				}
+				.bdl_#{$color_name}, .bdl_#{$color_name}_#{$color_level} {
+					border-left-color: #{$color_value} !important;
+				}
+			}
+			@else {
+				.bd_#{$color_name}_#{$color_level} , .bdh.bdh_#{$color_name}_#{$color_level}:hover {
+					border-color: #{$color_value} !important;
+				}
+				.bdt_#{$color_name}_#{$color_level} {
+					border-top-color: #{$color_value} !important;
+				}
+				.bdr_#{$color_name}_#{$color_level} {
+					border-right-color: #{$color_value} !important;
+				}
+				.bdb_#{$color_name}_#{$color_level} {
+					border-bottom-color: #{$color_value} !important;
+				}
+				.bdl_#{$color_name}_#{$color_level} {
+					border-left-color: #{$color_value} !important;
+				}
+			}
+		}
+	}
+}

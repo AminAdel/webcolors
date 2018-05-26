@@ -1,0 +1,31 @@
+//---> Create   :   1397.03.05
+//---> Finish   :   1397.03.05
+//---> Update   :   --
+/*****************************/
+
+.oth {
+	@include transition('outline-color', $effect_duration, '');
+}
+
+/* outline colors : */
+@each $color_name, $color_array in $colors {
+	@each $color_level, $color_value in $color_array {
+		@if $color_name == "shades" {
+			.ot_#{$color_level} , .oth.oth_#{$color_level}:hover {
+				outline-color: #{$color_value} !important;
+			}
+		}
+		@else {
+			@if($color_level == "500") {
+				.ot_#{$color_name}, .ot_#{$color_name}_#{$color_level} , .oth.oth_#{$color_name}_#{$color_level}:hover {
+					outline-color: #{$color_value} !important;
+				}
+			}
+			@else {
+				.ot_#{$color_name}_#{$color_level} , .oth.oth_#{$color_name}_#{$color_level}:hover {
+					outline-color: #{$color_value} !important;
+				}
+			}
+		}
+	}
+}
