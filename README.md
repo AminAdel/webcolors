@@ -119,7 +119,6 @@ I personally use these colors big time!
 the default levels was : 50, 100, 200, 300, ... , 900
 
 we added these levels :
-- 0 for #000
 - 1 for #111
 - 2 for #222
 - 3 for #333
