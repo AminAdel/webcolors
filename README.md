@@ -66,7 +66,7 @@ To set a border color to an element use classes like these example :
  ## outline colors
  To set outline color to an element use classes like this example :
 ```html
-<div class="ot_red_400">border blue</div>
+<div class="ot_red_400">outline red</div>
 ```
 
  ## gradient colors (under development)
