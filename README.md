@@ -76,18 +76,36 @@ If you want to learn how to set gradinet colors with css please visit this page 
 
 [linear-gradinet](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
-### simple gradient
+### simple gradients
 The css code to apply a simple gradient color is like this :
 ```css
 div {
 	background: linear-gradient(to bottom left, #3f87a6, #ebf8e1);
 }
 ```
-to add a simple gradient color with webcolors add "bg_gradient" class to the element
+to add a simple gradient color with **webcolors** add "bg_gradient" class to the element
 and add a data-gradient attribute with value of "everything between two parenthesis of above style".
 but now the colors must be material colors. look this example :
 ```html
 <div class="bg_gradient" data-gradient="to bottom left, blue_100, red_100"></div>
+```
+
+### advanced gradients
+The css code to apply an advanced gradient color is like this :
+```css
+div {
+	background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+```
+advanced gradient styles have more than one color.
+so the data attribute should be an array of strings in json format.
+and every string is like the simple gradient example.
+
+so we will have something like this :
+```html
+<div class="bg_gradient" data-gradient='["to bottom left, blue_100, red_100", "to bottom left, orange_200, yellow_500"]'></div>
 ```
 
 
