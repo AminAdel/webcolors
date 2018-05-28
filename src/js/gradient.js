@@ -1,4 +1,4 @@
-//---> Create	:	1397.03.05
+//---> Create	:	1397.03.05  ->  2018.05.26
 //---> Finish	:	--
 //---> Update	:	--
 /*****************************/
@@ -8,10 +8,6 @@ $(document).ready(function () {
 	if ($('.bg_gradient').length === 0) return;
 	
 	webColors_gradient = new class_webColors_gradient();
-	
-	// usage example :
-	// example simple   : <div class="bg_gradient" data-gradient='["to bottom left, red_100, red_300"]'></div>
-	// example advanced : <div class="bg_gradient" data-gradient='["to bottom left, red, orange", "to top left, blue, indigo"]'></div>
 	
 });
 
@@ -47,7 +43,6 @@ function class_webColors_gradient() {
 	
 	this.simple = function(item, data) {
 		// usage example : <div class="bg_gradient" data-gradient="to bottom left, red_100, red_300"></div>
-		//data = data.split(',');
 		$(this).css('background', 'linear-gradient(' + data + ')');
 	}; //done
 	
@@ -62,7 +57,7 @@ function class_webColors_gradient() {
 			}
 			$(item).css('background', css_value);
 		});
-	};
+	}; //done
 	
 	/*****************************/
 	// After All Methods :
