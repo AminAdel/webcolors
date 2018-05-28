@@ -2,6 +2,7 @@
 //---> Finish	:	--
 //---> Update	:	--
 /*****************************/
+// todo : add color variables to replace words with values;
 /* jquery required */
 $(document).ready(function () {
 	
