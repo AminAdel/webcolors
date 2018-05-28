@@ -69,7 +69,7 @@ To set a border color to an element use classes like these example :
 <div class="ot_red_400">border blue</div>
 ```
 
- ## gradient colors
+ ## gradient colors (under development)
 gradient colors are a little different from other colors.
 we need to do some extra things to do that.
 
