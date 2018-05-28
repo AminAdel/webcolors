@@ -68,6 +68,29 @@ To set a border color to an element use classes like these example :
 <div class="ot_red_400">border blue</div>
 ```
 
+ ## gradient colors
+gradient colors are a little different from other colors.
+we need to do some extra things to do that.
+
+If you want to learn how to set gradinet colors with css please visit this page :
+
+[linear-gradinet](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
+
+### simple gradient
+The css code to apply a simple gradient color is like this :
+```css
+div {
+	background: linear-gradient(to bottom left, #3f87a6, #ebf8e1);
+}
+```
+to add a simple gradient color with webcolors add "bg_gradient" class to the element
+and add a data-gradient attribute with value of "everything between two parenthesis of above style".
+but now the colors must be material colors. look this example :
+```html
+<div class="bg_gradient" data-gradient="to bottom left, blue_100, red_100"></div>
+```
+
+
 ---
 
 ## grey colors
@@ -111,5 +134,3 @@ we added these levels :
 
 so the grey classes will be like these : "grey_5", "bg_grey_f5", "bd_grey_d", ...
 
-
-_enjoy_
