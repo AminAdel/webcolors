@@ -3,7 +3,7 @@ easy way to use material colors in web pages
 
 ---
 
-webcolors uses google's material colors.
+we used google's material colors.
 If you are not familiar with material colors please visit this page first :
 
 [Google Material Colors](https://material.io/design/color/#tools-for-picking-colors)
