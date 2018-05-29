@@ -116,7 +116,7 @@ we added these levels :
 - d for #ddd
 - e for #eee
 
-- f0 for #f0f0f0 (soon ... updating)
+- f0 for #f0f0f0
 - f1 for #f1f1f1
 - f2 for #f2f2f2
 - f3 for #f3f3f3
@@ -132,5 +132,5 @@ we added these levels :
 - fd for #fdfdfd
 - fe for #fefefe
 
-so the grey classes will be like these : "grey_5", "bg_grey_f5", "bd_grey_d", ...
+so the grey classes will be like these : "grey_300", "grey_5", "bg_grey_f5", "bd_grey_d", ...
 
