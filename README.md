@@ -12,13 +12,13 @@ If you are not familiar with material colors please visit this page first :
 ---
 
 ## quick start
-There is 2 files in the dist folder, insert them in your html code.
+There are 2 files in the dist folder, insert them in your html code.
 
 The js file is for gradinet colors only.
 If you don't need it you won't have to insert that.
 This file needs jquery, so insert jquery before it.
 
-so we will have something this :
+then we will have something this :
 
 ```html
 <!-- jquery (I think any version would work) -->
@@ -70,7 +70,7 @@ To set a border color to an element use classes like these example :
 <div class="ot_red_400">outline red</div>
 ```
 
- ## gradient colors (under development)
+ ## gradient colors
 gradient colors are a little different from other colors.
 we need to do some extra things to apply that.
 
