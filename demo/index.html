@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>webcolors examples</title>
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="bootstrap-4.1.0.min.css">
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	
+	<!-- webcolors -->
+	<link rel="stylesheet" href="../dist/webcolors.min.css">
+	<script type="text/javascript" src="../src/js/gradient.js"></script>
+	
+	<!-- styles -->
+	<style>
+		.row {
+			margin-top: 50px;
+		}
+		.box {
+			padding: 30px;
+			height: 200px;
+			text-align: center;
+		}
+		.bd_3 {
+			border-width: 3px;
+		}
+		.bd_solid {
+			border-style: solid;
+		}
+		.ot_3 {
+			outline-width: 3px;
+		}
+		.ot_solid {
+			outline-style: solid;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col col-6 col-md-4 col-lg-3">
+				<div class="box bg_blue_500 white">blue_500 bg, white text</div>
+			</div>
+			<div class="col col-6 col-md-4 col-lg-3">
+				<div class="box bg_gradient" data-gradient="to bottom left, [blue_100], [red_200]">gradient bg <br> (blue_100 to red_200)</div>
+			</div>
+			<div class="col col-6 col-md-4 col-lg-3">
+				<div class="box bg_grey_e bd_3 bd_solid bd_orange">border orange</div>
+			</div>
+			<div class="col col-6 col-md-4 col-lg-3">
+				<div class="box bg_grey_e bd_3 bd_solid bdt_red bdr_blue bdb_yellow bdl_green">border multi colors</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-6 col-md-4 col-lg-3">
+				<div class="box bg_grey_e bd_3 bd_solid bd_orange ot_3 ot_solid ot_blue">orange border and blue outline</div>
+			</div>
+			<div class="col col-6 col-md-8 col-lg-9">
+				<div class="box bg_gradient white" data-gradient="to bottom left, [blue_300], [red_300]">
+					"webcolors" works great near "Erkin-Base". <br>
+					with "Erkin-Base" and "webcolors" together you can set almost every common style with classes only.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
