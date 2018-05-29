@@ -18,7 +18,7 @@ The js file is for gradinet colors only.
 If you don't need it you won't have to insert that.
 This file needs jquery, so insert jquery before it.
 
-then we will have something this :
+then we will have something like this :
 
 ```html
 <!-- jquery (I think any version would work) -->
