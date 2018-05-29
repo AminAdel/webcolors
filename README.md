@@ -30,7 +30,7 @@ so we will have something this :
 
 ---
 
-## about colors
+## about the material colors
 every color has a name and a level.
 
 for example "blue" with level of "200".
