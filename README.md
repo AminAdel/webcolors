@@ -76,7 +76,7 @@ we need to do some extra things to apply that.
 
 If you want to learn how to set gradient colors with css please visit this page :
 
-[linear-gradinet](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
+[css gradinet](https://www.w3schools.com/css/css3_gradients.asp)
 
 ### simple gradients
 The css code to apply a simple gradient color is like this :
