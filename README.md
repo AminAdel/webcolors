@@ -1,4 +1,5 @@
-# webcolors
+# webcolors version 1.0.0
+
 easy way to use material colors in web pages
 
 ---
