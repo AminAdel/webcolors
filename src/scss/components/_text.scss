@@ -4,7 +4,7 @@
 /*****************************/
 
 .txh {
-	@include transition('color', $effect_duration, '');
+	@include transition('color', map_get($config, 'effect_duration'), '');
 }
 
 /* text colors : */

@@ -4,7 +4,7 @@
 /*****************************/
 
 .oth {
-	@include transition('outline-color', $effect_duration, '');
+	@include transition('outline-color', map_get($config, 'effect_duration'), '');
 }
 
 /* outline colors : */

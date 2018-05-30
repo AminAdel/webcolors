@@ -4,7 +4,7 @@
 /*****************************/
 
 .bgh {
-	@include transition('background-color', $effect_duration, '');
+	@include transition('background-color', map_get($config, 'effect_duration'), '');
 }
 
 /* bg colors : */

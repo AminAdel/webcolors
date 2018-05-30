@@ -4,7 +4,7 @@
 /*****************************/
 
 .bdh {
-	@include transition('border-color', $effect_duration, '');
+	@include transition('border-color', map_get($config, 'effect_duration'), '');
 }
 
 /* border colors : */
@@ -12,7 +12,7 @@
 	@each $color_level, $color_value in $color_array {
 		@if $color_name == "shades" {
 			.bd_#{$color_level} , .bdh.bdh_#{$color_level}:hover {
-				border-color: #{$color_value} !important;
+				border-color: #{$color_value};
 			}
 			.bdt_#{$color_level} {
 				border-top-color: #{$color_value} !important;
@@ -29,39 +29,39 @@
 		}
 		@else {
 			@if($color_level == "500") {
-				.bd_#{$color_name}, .bd_#{$color_name}_#{$color_level} , .bdh.bdh_#{$color_name}_#{$color_level}:hover {
-					border-color: #{$color_value} !important;
+				.bd_#{$color_name} {
+					border-color: #{$color_value};
 				}
-				.bdt_#{$color_name}, .bdt_#{$color_name}_#{$color_level} {
+				.bdt_#{$color_name} {
 					border-top-color: #{$color_value} !important;
 				}
-				.bdr_#{$color_name}, .bdr_#{$color_name}_#{$color_level} {
+				.bdr_#{$color_name} {
 					border-right-color: #{$color_value} !important;
 				}
-				.bdb_#{$color_name}, .bdb_#{$color_name}_#{$color_level} {
+				.bdb_#{$color_name} {
 					border-bottom-color: #{$color_value} !important;
 				}
-				.bdl_#{$color_name}, .bdl_#{$color_name}_#{$color_level} {
+				.bdl_#{$color_name} {
 					border-left-color: #{$color_value} !important;
 				}
 			}
-			@else {
-				.bd_#{$color_name}_#{$color_level} , .bdh.bdh_#{$color_name}_#{$color_level}:hover {
-					border-color: #{$color_value} !important;
-				}
-				.bdt_#{$color_name}_#{$color_level} {
-					border-top-color: #{$color_value} !important;
-				}
-				.bdr_#{$color_name}_#{$color_level} {
-					border-right-color: #{$color_value} !important;
-				}
-				.bdb_#{$color_name}_#{$color_level} {
-					border-bottom-color: #{$color_value} !important;
-				}
-				.bdl_#{$color_name}_#{$color_level} {
-					border-left-color: #{$color_value} !important;
-				}
+			
+			.bd_#{$color_name}_#{$color_level} , .bdh.bdh_#{$color_name}_#{$color_level}:hover {
+				border-color: #{$color_value};
 			}
+			.bdt_#{$color_name}_#{$color_level} {
+				border-top-color: #{$color_value} !important;
+			}
+			.bdr_#{$color_name}_#{$color_level} {
+				border-right-color: #{$color_value} !important;
+			}
+			.bdb_#{$color_name}_#{$color_level} {
+				border-bottom-color: #{$color_value} !important;
+			}
+			.bdl_#{$color_name}_#{$color_level} {
+				border-left-color: #{$color_value} !important;
+			}
+			
 		}
 	}
 }
