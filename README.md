@@ -14,7 +14,7 @@ If you are not familiar with material colors please visit this page first :
 ## quick start
 There are 2 files in the dist folder, insert them in your html code.
 
-The js file is for gradinet colors only.
+The js file is for gradient colors only.
 If you don't need it you won't have to insert that.
 This file needs jquery, so insert jquery before it.
 
