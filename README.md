@@ -4,7 +4,7 @@ easy way to use material colors in web pages
 
 ---
 
-we used google's material colors.
+we used google's material colors. 
 If you are not familiar with material colors please visit this page first :
 
 [Google Material Colors](https://material.io/design/color/#tools-for-picking-colors)
@@ -12,6 +12,7 @@ If you are not familiar with material colors please visit this page first :
 ---
 
 ## quick start
+
 There are 2 files in the dist folder, insert them in your html code.
 
 The js file is for gradient colors only.
@@ -32,6 +33,7 @@ then we will have something like this :
 ---
 
 ## about the material colors
+
 every color has a name and a level.
 
 for example "blue" with level of "200".
@@ -40,22 +42,46 @@ the default level for each color is 500.
 
 ---
 
-## text colors
+## text colors :
+
 To set a color to the text of an element use classes like these examples :
+
 ```html
 <div class="blue_200">this is a light blue text</div>
 <div class="blue">this is a blue text with default level of 500</div>
 ```
 
+## change text color on mouse hover :
+
+to change the text color when mouse hovers add class `txh` and then add `txh_{color}`.
+
+```html
+<div class="blue_200 txh txh_red_200">light blue to light red</div>
+<div class="txh txh_indigo_500">changes to indigo</div>
+```
+
 ## background colors
+
 To set background color to an element use classes like these examples :
+
 ```html
 <div class="bg_orange_200">this element has a light orange background</div>
 <div class="bg_orange">this element has an orange background with color level of 500</div>
 ```
 
+## change background color on mouse hover :
+
+to change the background color when mouse hovers add class `bgh` and then add `bgh_{color}`.
+
+```html
+<div class="bg_blue_200 bgh bgh_red_200">light blue to light red</div>
+<div class="bgh bgh_indigo_500">changes to indigo</div>
+```
+
 ## border colors
+
 To set a border color to an element use classes like these example :
+
 ```html
 <div class="bd_blue">border blue</div>
 <div class="bdt_red">border top red</div>
@@ -64,13 +90,34 @@ To set a border color to an element use classes like these example :
 <div class="bdl_blue">border left blue</div>
 ```
 
+## change border color on mouse hover :
+
+to change the border color when mouse hovers add class `bdh` and then add `bdh_{color}`.
+
+```html
+<div class="bd_blue_200 bdh bdh_red_200">light blue to light red</div>
+<div class="bdh bdh_indigo_500">changes to indigo</div>
+```
+
  ## outline colors
+
  To set outline color to an element use classes like this example :
+
 ```html
 <div class="ot_red_400">outline red</div>
 ```
 
+## change outline color on mouse hover :
+
+to change the outline color when mouse hovers add class `bdh` and then add `bdh_{color}`.
+
+```html
+<div class="ot_blue_200 oth oth_red_200">light blue to light red</div>
+<div class="oth oth_indigo_500">changes to indigo</div>
+```
+
  ## gradient colors
+
 gradient colors are a little different from other colors.
 we need to do some extra things to apply that.
 
@@ -79,15 +126,19 @@ If you want to learn how to set gradient colors with css please visit this page 
 [css gradient](https://www.w3schools.com/css/css3_gradients.asp)
 
 ### simple gradients
+
 The css code to apply a simple gradient color is like this :
+
 ```css
 div {
 	background: linear-gradient(to bottom left, #3f87a6, #ebf8e1);
 }
 ```
+
 to add a simple gradient color, add "bg_gradient" class to the element
 and add a data-gradient attribute with value of "_everything between two parenthesis of above style_".
 but now the colors must be material colors. look this example :
+
 ```html
 <div class="bg_gradient" data-gradient="to bottom left, [blue_100], [red_100]"></div>
 ```
@@ -95,6 +146,7 @@ but now the colors must be material colors. look this example :
 ---
 
 ## about grey colors
+
 we added some extra grey levels to the material colors.
 I personally use these colors big time!
 
