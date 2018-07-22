@@ -189,4 +189,4 @@ so the grey classes will be like these : "grey_300", "grey_5", "bg_grey_f5", "bd
 ---
 
 ## webcolors and Erkin-Base
-"webcolors" was a part of [Erkin-Base](https://www.w3schools.com/css/css3_gradients.asp) at first, then we decided to separate it. They are a great match together and you should use them both.
+"webcolors" was a part of [Erkin-Base](https://github.com/AminAdel/Erkin-Base) at first, then we decided to separate it. They are a great match together and you should use them both.
