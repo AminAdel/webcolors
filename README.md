@@ -150,7 +150,7 @@ but now the colors must be material colors. look this example :
 we added some extra grey levels to the material colors.
 I personally use these colors big time!
 
-the default levels was : 50, 100, 200, 300, ... , 900
+the default levels were : 50, 100, 200, 300, ... , 900
 
 we added these levels :
 - 1 for #111
