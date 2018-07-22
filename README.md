@@ -51,7 +51,7 @@ To set a color to the text of an element use classes like these examples :
 <div class="blue">this is a blue text with default level of 500</div>
 ```
 
-## change text color on mouse hover :
+### change text color on mouse hover :
 
 to change the text color when mouse hovers add class `txh` and then add `txh_{color}`.
 
@@ -69,7 +69,7 @@ To set background color to an element use classes like these examples :
 <div class="bg_orange">this element has an orange background with color level of 500</div>
 ```
 
-## change background color on mouse hover :
+### change background color on mouse hover :
 
 to change the background color when mouse hovers add class `bgh` and then add `bgh_{color}`.
 
@@ -90,7 +90,7 @@ To set a border color to an element use classes like these example :
 <div class="bdl_blue">border left blue</div>
 ```
 
-## change border color on mouse hover :
+### change border color on mouse hover :
 
 to change the border color when mouse hovers add class `bdh` and then add `bdh_{color}`.
 
@@ -107,7 +107,7 @@ to change the border color when mouse hovers add class `bdh` and then add `bdh_{
 <div class="ot_red_400">outline red</div>
 ```
 
-## change outline color on mouse hover :
+### change outline color on mouse hover :
 
 to change the outline color when mouse hovers add class `bdh` and then add `bdh_{color}`.
 
