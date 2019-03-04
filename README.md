@@ -109,7 +109,7 @@ to change the border color when mouse hovers add class `bdh` and then add `bdh_{
 
 ### change outline color on mouse hover :
 
-to change the outline color when mouse hovers add class `bdh` and then add `bdh_{color}`.
+to change the outline color when mouse hovers add class `oth` and then add `oth_{color}`.
 
 ```html
 <div class="ot_blue_200 oth oth_red_200">light blue to light red</div>
